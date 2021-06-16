@@ -18,7 +18,8 @@ pipeline {
        }
       stage('install') {
           steps {
-             sh 'npm install --force Demo' 
+             sh 'npm install --unsafe-perm --force Demo' 
+              sh 'npm config set unsafe-perm true'
             // sh 'npm run test'
           }
             }
@@ -28,7 +29,7 @@ pipeline {
                    // sh 'node ./node_modules/webdriver-manager/bin/webdriver-manager clean'
                     // sh  './node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.25.exe'
                   sh 'node node_modules/protractor/bin/webdriver-manager update'
-                      sh 'npm run test'
+                   sh 'npm run test'
                                                 
           }
   }
