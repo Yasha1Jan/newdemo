@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1623861908508' stop='1623861913202'>
+    <name>Protractor Demo App</name>
+    <title>Protractor Demo App</title>
+    <test-cases>
+        <test-case start='1623861908508' status='passed' stop='1623861913201'>
+            <name>should add one and two</name>
+            <title>should add one and two</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
