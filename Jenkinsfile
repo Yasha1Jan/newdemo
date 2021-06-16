@@ -11,7 +11,7 @@ pipeline {
              //  sh 'npm install selenium-webdriver'
               // sh 'webdriver-manager clean'
                // sh 'webdriver-manager start'
-              sh 'sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose'
+              'sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose'
                 sh 'docker-compose -f docker-compose.yml up --build --abort-on-container-exit'
            }
         }
