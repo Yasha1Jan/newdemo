@@ -18,15 +18,15 @@ pipeline {
        }
       stage('install') {
           steps {
-             sh 'npm install --force Demo' 
+             sh 'npm install --force' 
             // sh 'npm run test'
           }
             }
          stage('Test') {
                  steps {
-                   sh  'npm install protractor'                                         
+                  // sh  'npm install protractor'                                         
                     // sh  './node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.25.exe'
-                      sh 'node ./node_modules/protractor/bin/webdriver-manager install'
+                      sh './node_modules/.bin/webdriver-manager update --versions.chrome=83.0.4103.116'
                   sh 'node ./node_modules/protractor/bin/webdriver-manager update'
                     //  sh 'npm run test'
                                                 
