@@ -19,7 +19,7 @@ exports.config = {
       },       
       unexpectedAlertBehaviour: 'accept',
       shardTestFiles: true,
-      maxInstances: 4,
+      maxInstances: 1,
       chromeOptions: {
         w3c: false,     
         excludeSwitches: ['enable-automation'],
