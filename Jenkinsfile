@@ -7,7 +7,7 @@ pipeline {
               sh 'rm -rf testpipe'
               git 'https://github.com/Yasha1Jan/Demo.git'
               sh 'npm cache clean --force'
-              sh 'npm install'
+              sh 'npm install -g @angular/cli'
              //  sh 'npm install selenium-webdriver'
               // sh 'webdriver-manager clean'
                // sh 'webdriver-manager start'
