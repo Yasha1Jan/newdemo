@@ -28,7 +28,7 @@ pipeline {
                    // sh 'node ./node_modules/webdriver-manager/bin/webdriver-manager clean'
                     // sh  './node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.25.exe'
                   sh './node_modules/protractor/bin/webdriver-manager update'
-                      sh 'npm run test'
+                      sh 'protractor .\conf\conf.js'
                                                 
           }
   }
