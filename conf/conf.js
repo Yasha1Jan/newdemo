@@ -1,50 +1,16 @@
 exports.config = {
-   // directConnect: true,
+   directConnect: true,
    
      framework: 'jasmine2',
   //  seleniumServerStartTimeout: 90000,
   //  seleniumAddress: 'http://localhost:4444/wd/hub',
      
    
-     //capabilities: {
-    ///   'browserName': 'chrome'
-    // },
-    multiCapabilities: [{
-      browserName: 'chrome',
-      ACCEPT_SSL_CERTS: true,
-      trustAllSSLCertificates: true,
-      acceptInsecureCerts: true,
-      'goog:chromeOptions': {
-        w3c: false,
-      },       
-      unexpectedAlertBehaviour: 'accept',
-      shardTestFiles: true,
-      maxInstances: 1,
-      chromeOptions: {
-        w3c: false,     
-        excludeSwitches: ['enable-automation'],
-        useAutomationExtension: false,
-        prefs: {
-          download: {
-            prompt_for_download: false,
-            directory_upgrade: true,         
-          },
-          credentials_enable_service: false,
-          profile: {
-            password_manager_enabled: false,
-          },
-        },
-        args: [
-          '--no-sandbox',
-          '--ignore-ssl-errors',
-          '--disable-gpu',
-          '--window-size=1280,1440',
-          '--serve_after_close',
-          '--disable-dev-shm-usage',
-          '--ignore-certificate-errors'
-        ],
-      },
-    }],               
+     capabilities: {
+       'browserName': 'chrome'
+     },
+   
+                  
     specs: [
        '../specs/spec.js'
       
