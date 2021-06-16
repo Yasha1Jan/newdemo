@@ -28,7 +28,7 @@ pipeline {
                  // sh 'node ./node_modules/protractor/bin/webdriver-manager update'
                       //sh 'node node_modules/protractor/bin/webdriver-manager update'
                     sh './node_modules/protractor/bin/webdriver-manager update'
-                      sh 'npm run test'
+                    //  sh 'npm run test'
                                                 
           }
   }
