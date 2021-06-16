@@ -1,9 +1,9 @@
 exports.config = {
-    directConnect: true,
+    //directConnect: true,
    
      framework: 'jasmine2',
     seleniumServerStartTimeout: 90000,
-     //seleniumAddress: 'http://localhost:4444/wd/hub',
+    seleniumAddress: 'http://localhost:4444/wd/hub',
      
    
      //capabilities: {
