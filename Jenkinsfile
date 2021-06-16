@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
            steps {
-              sh 'rm -rf testpipe'
-              git 'https://github.com/Yasha1Jan/Demo.git'
+             // sh 'rm -rf mynewpipeline'
+              git 'https://github.com/Yasha1Jan/newdemo.git'
               sh 'npm cache clean --force'
               // sh 'npm install protractor'
              //  sh 'npm install selenium-webdriver'
