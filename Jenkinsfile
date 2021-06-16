@@ -16,12 +16,7 @@ pipeline {
                 
              }
        }
-      stage('install') {
-          steps {
-            // sh 'npm install --force' 
-            // sh 'npm run test'
-          }
-            }
+     
          stage('Test') {
                  steps {
                 // sh 'npm install -g protractor'                                         
