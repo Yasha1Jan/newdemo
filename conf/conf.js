@@ -3,12 +3,13 @@ exports.config = {
    
      framework: 'jasmine2',
     seleniumServerStartTimeout: 90000,
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+   // seleniumAddress: 'http://localhost:4444/wd/hub',
      
    
      //capabilities: {
     ///   'browserName': 'chrome'
     // },
+    WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
     capabilities: {'browserName': 'chrome'},                     
     specs: [
        '../specs/spec.js'
