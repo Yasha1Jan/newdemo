@@ -1,5 +1,5 @@
 exports.config = {
-   directConnect: true,
+   //directConnect: true,
    
      framework: 'jasmine2',
   //  seleniumServerStartTimeout: 90000,
