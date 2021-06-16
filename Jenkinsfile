@@ -11,7 +11,8 @@ pipeline {
              //  sh 'npm install selenium-webdriver'
               // sh 'webdriver-manager clean'
                // sh 'webdriver-manager start'
-                sh './docker-compose up'
+              sh 'cd $FOLDER'
+                sh 'docker-compose -f docker-compose.yml up --build --abort-on-container-exit'
            }
         }
     }
