@@ -9,8 +9,11 @@ exports.config = {
      //capabilities: {
     ///   'browserName': 'chrome'
     // },
-    WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
-    capabilities: {'browserName': 'chrome'},                     
+     multiCapabilities: [{
+    browserName: 'chrome',  
+         maxInstances: 4,
+         
+          }],
     specs: [
        '../specs/spec.js'
       
