@@ -11,7 +11,7 @@ pipeline {
              //  sh 'npm install selenium-webdriver'
               // sh 'webdriver-manager clean'
                // sh 'webdriver-manager start'
-                sh 'docker-compose up'
+                sh './docker-compose up'
            }
         }
     }
