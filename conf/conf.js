@@ -4,11 +4,12 @@ exports.config = {
      framework: 'jasmine2',
   //  seleniumServerStartTimeout: 90000,
   //  seleniumAddress: 'http://localhost:4444/wd/hub',
+   seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
      
    
-     capabilities: {
-       'browserName': 'chrome'
-     },
+   //  capabilities: {
+     //  'browserName': 'chrome'
+    // },
    
                   
     specs: [
