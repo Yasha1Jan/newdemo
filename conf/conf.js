@@ -9,7 +9,8 @@ exports.config = {
    
    multiCapabilities: [{
     browserName: 'chrome',
-    maxInstances: 1
+    maxInstances: 1,
+       seleniumPort: 4455
    }],
    {
     spawnOptions: {
