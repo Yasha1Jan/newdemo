@@ -10,7 +10,7 @@ exports.config = {
    multiCapabilities: [{
     browserName: 'chrome',
     maxInstances: 1,
-      seleniumServerJar: './node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-3.4.0.jar',
+      seleniumServerJar: '/var/jenkins_home/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/node/lib/node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-3.141.59.jar -port 5555',
   seleniumPort: 5555,
   seleniumArgs: ['-browserTimeout=60']
    }],
