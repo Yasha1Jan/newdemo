@@ -10,7 +10,9 @@ exports.config = {
    multiCapabilities: [{
     browserName: 'chrome',
     maxInstances: 1,
-       seleniumPort: 4455
+      seleniumServerJar: './node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-3.4.0.jar',
+  seleniumPort: 5555,
+  seleniumArgs: ['-browserTimeout=60']
    }],
    {
     spawnOptions: {
