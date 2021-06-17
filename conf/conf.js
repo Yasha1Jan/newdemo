@@ -11,7 +11,14 @@ exports.config = {
     browserName: 'chrome',
     maxInstances: 1
    }],
-   
+   {
+    spawnOptions: {
+        detached: true,
+        stdio: 'ignore'
+    },
+    drivers : drivers,
+    seleniumArgs : ['-port=5555']
+},
                   
     specs: [
        '../specs/spec.js'
