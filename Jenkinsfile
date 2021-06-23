@@ -20,7 +20,7 @@ pipeline {
                   
                     
                   // sh 'webdriver-manager start --seleniumPort 12345'
-                     sh 'protractor test/conf.js'
+                     sh 'protractor conf/conf.js'
           }
              }
        
