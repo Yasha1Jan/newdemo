@@ -15,7 +15,7 @@ pipeline {
                      sh 'npm install -g protractor --version=7.0.0'     
                      sh 'protractor --version'
                      sh 'webdriver-manager update'
-                     sh 'webdriver-manager shutdown'
+                    
                     // sh 'webdriver-manager start'
                      sh 'npm run test'
           }
