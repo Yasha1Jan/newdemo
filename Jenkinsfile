@@ -13,8 +13,10 @@ pipeline {
               stage('Test') {
                  steps {
                      sh 'npm install'    
-                     sh 'npm run test' 
-                  
+                    
+                     sh 'npm config set user 0'
+                     sh 'npm config set unsafe-perm true'
+                   sh 'npm run test' 
                     // sh 'npm install -g chromedriver'
                   //   sh 'webdriver-manager update'
                   
