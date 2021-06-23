@@ -17,7 +17,7 @@ pipeline {
                      sh 'webdriver-manager update'
                   
                     
-                   sh 'webdriver-manager start'
+                   sh 'webdriver-manager start --seleniumPort 12345'
                      sh 'protractor test/conf.js'
           }
              }
