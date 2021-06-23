@@ -17,7 +17,7 @@ pipeline {
                      sh 'webdriver-manager update'
                     
                     // sh 'webdriver-manager start'
-                     sh 'protractor conf/conf.js'
+                     sh 'protractor test/conf.js'
           }
              }
        
