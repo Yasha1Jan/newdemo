@@ -17,7 +17,7 @@ pipeline {
                      sh 'webdriver-manager update'
                     
                     // sh 'webdriver-manager start'
-                     sh 'npm run test'
+                     sh './node_modules/.bin/protractor protractor.conf.js'
           }
              }
        
