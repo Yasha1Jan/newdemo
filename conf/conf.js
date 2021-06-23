@@ -1,17 +1,17 @@
 exports.config = {
-   directConnect: false,
+  
    
      framework: 'jasmine2',
   //  seleniumServerStartTimeout: 90000,
 //seleniumAddress: 'http://localhost:4444/wd/hub',
-   seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
+  // seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
  
    
    multiCapabilities: [{
     browserName: 'chrome',    
     unexpectedAlertBehaviour: 'accept',
     shardTestFiles: true,
-    maxInstances: 2
+    maxInstances: 1
    
    }],
   
