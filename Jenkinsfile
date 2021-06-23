@@ -17,7 +17,7 @@ pipeline {
                      sh 'webdriver-manager update'
                      sh 'webdriver-manager shutdown'
                     // sh 'webdriver-manager start'
-                   //  sh 'npm run test'
+                     sh 'npm run test'
           }
              }
        
