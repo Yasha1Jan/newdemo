@@ -11,7 +11,7 @@ exports.config = {
     browserName: 'chrome',    
     unexpectedAlertBehaviour: 'accept',
     shardTestFiles: true,
-    maxInstances: 2,
+    maxInstances: 2
    
    }],
   
