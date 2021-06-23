@@ -12,8 +12,8 @@ pipeline {
        }
               stage('Test') {
                  steps {
-                     sh 'npm install -g protractor --version=7.0.0'     
-                     sh 'protractor --version'
+                     sh 'npm install'     
+                     
                      sh 'webdriver-manager update'
                     
                     // sh 'webdriver-manager start'
