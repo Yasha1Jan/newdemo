@@ -15,9 +15,9 @@ pipeline {
                      sh 'npm install --latest'     
                      sh 'npm install -g protractor --latest' 
                      sh 'webdriver-manager update'
-                     sh 'webdriver-update chrome'
+                  
                     
-                    // sh 'webdriver-manager start'
+                   sh 'webdriver-manager start'
                      sh 'protractor test/conf.js'
           }
              }
