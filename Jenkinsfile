@@ -12,15 +12,15 @@ pipeline {
        }
               stage('Test') {
                  steps {
-                     sh 'npm install --latest'     
-                     sh 'npm install -g protractor --latest' 
+                     sh 'npm install'    
+                     sh 'npm run test' 
                   
-                     sh 'npm install -g chromedriver'
-                     sh 'webdriver-manager update'
+                    // sh 'npm install -g chromedriver'
+                  //   sh 'webdriver-manager update'
                   
                     
                   // sh 'webdriver-manager start --seleniumPort 12345'
-                     sh 'protractor conf/conf.js'
+                   //  sh 'protractor conf/conf.js'
           }
              }
        
