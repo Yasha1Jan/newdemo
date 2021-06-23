@@ -14,6 +14,8 @@ pipeline {
                  steps {
                      sh 'npm install --latest'     
                      sh 'npm install -g protractor --latest' 
+                     sh 'npm uninstall -g chromedriver'
+                     sh 'npm install -g chromedriver'
                      sh 'webdriver-manager update'
                   
                     
