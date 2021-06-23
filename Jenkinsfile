@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
            steps {
               sh 'rm -rf mynewpipeline'
-              git 'https://github.com/Yasha1Jan/Demo.git'
+              git 'https://github.com/Yasha1Jan/newdemo.git'
               sh 'npm cache clean --force'
                                                      
              }
