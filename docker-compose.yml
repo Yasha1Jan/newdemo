@@ -1,7 +1,8 @@
 version: "2.4"
 
 services:
-    progrid:
+  
+  progrid:
     image: selenium/hub:3.141.59
     container_name: selenium_hub
     ports: 
@@ -9,7 +10,7 @@ services:
   
   nodechrome:
         image: selenium/node-chrome:3.141.59
-        scale: 5
+        scale: 4
         privileged: true
         depends_on:
           - progrid
