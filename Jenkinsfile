@@ -16,7 +16,7 @@ pipeline {
                      sh 'npm install -g protractor' 
                      sh 'npm config set user 0'
                      sh 'node node_modules/protractor/bin/webdriver-manager update'
-                     sh 'protractor-conf.js' 
+                     sh 'node node_modules/.bin/protractor/conf/conf.js' 
                   
           }
              }
