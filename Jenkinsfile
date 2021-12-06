@@ -13,16 +13,10 @@ pipeline {
               stage('Test') {
                  steps {
                      sh 'npm install'    
-                    
                      sh 'npm config set user 0'
                      sh 'npm config set unsafe-perm true'
-                   sh 'npm run test' 
-                    // sh 'npm install -g chromedriver'
-                  //   sh 'webdriver-manager update'
+                     sh 'npm run test' 
                   
-                    
-                  // sh 'webdriver-manager start --seleniumPort 12345'
-                   //  sh 'protractor conf/conf.js'
           }
              }
        
