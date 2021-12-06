@@ -4,35 +4,21 @@ pipeline {
     stages {
         stage('Build') {
            steps {
-              sh 'rm -rf testpipe'
-              git 'https://github.com/Yasha1Jan/Demo.git'
+              sh 'rm -rf mynewpipeline'
+              git 'https://github.com/Yasha1Jan/newdemo.git'
               sh 'npm cache clean --force'
-              // sh 'npm install protractor'
-             //  sh 'npm install selenium-webdriver'
-              // sh 'webdriver-manager clean'
-               // sh 'webdriver-manager start'
-             
-             
-                
+                                                     
              }
        }
-      stage('install') {
-          steps {
-             sh 'npm install --force' 
-            // sh 'npm run test'
-          }
-            }
-         stage('Test') {
+              stage('Test') {
                  steps {
-                 sh 'npm install -g protractor'                                         
-                    // sh  './node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.25.exe'
-                     // sh 'node ./node_modules/protractor/bin/webdriver-manager update --versions.chrome=83.0.4103.116'
-                 // sh 'node ./node_modules/protractor/bin/webdriver-manager update'
-                     sh ' node ./node_modules/protractor/bin/protractor conf/conf.js'
-                    //  sh 'npm run test'
-                                                
+                     sh 'npm install'    
+                     sh 'npm config set user 0'
+                     sh 'npm config set unsafe-perm true'
+                     sh 'npm run test' 
+                  
           }
-  }
+             }
        
         }
         post('publish reports') {
