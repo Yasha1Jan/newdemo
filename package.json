@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "pre-build": "npm i && npm install",
-    "pretest": "node node_modules/bin/webdriver-manager update",
+    "pretest": "node node_modules/.bin/webdriver-manager update",
     "start": "node node_modules/webdriver-manager/bin/webdriver-manager start",
     "test":  "node node_modules/.bin/protractor conf/conf.js",
     "start": "npm run update &&npm run startp &&npm run test"
