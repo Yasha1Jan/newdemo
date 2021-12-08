@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "pre-build": "npm i && npm install",
-    "pretest": "node node_modules/.bin/webdriver-manager update --versions=78.0.33904.70",
+    "pretest": "node node_modules/.bin/webdriver-manager update",
     "start": "node node_modules/webdriver-manager/bin/webdriver-manager start",
     "test": "node node_modules/.bin/protractor conf/conf.js"
   }
