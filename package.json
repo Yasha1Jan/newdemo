@@ -1,5 +1,4 @@
 {
-  "name": "test",
   "description": "tests",
   "main": "index.js",
   "dependencies": {
