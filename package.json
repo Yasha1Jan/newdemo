@@ -1,7 +1,7 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "test",
+  "description": "tests",
   "main": "index.js",
   "dependencies": {
     "jasmine-allure-reporter": "^1.0.2",
@@ -11,7 +11,5 @@
   "devDependencies": {},
   "scripts": {
     "test": "node_modules/.bin/protractor conf/conf.js"
-  },
-  "author": "",
-  "license": "ISC"
+
 }
