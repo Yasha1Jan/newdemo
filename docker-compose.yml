@@ -19,3 +19,5 @@ services:
         environment:
           - HUB_PORT_4444_TCP_ADDR=progrid
           - HUB_PORT_4444_TCP_PORT=4444
+        command:
+          npm run test
