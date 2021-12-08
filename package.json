@@ -1,17 +1,18 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "description": "test",
+  "name": "TOMR",
+  "version": "0.0.0",
   "main": "index.js",
   "dependencies": {
     "jasmine-allure-reporter": "^1.0.2",
     "jsbn": "^0.1.1",
-    "protractor": "^7.0.0"
+    "protractor": "^5.3.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node_modules/.bin/protractor conf/conf.js"
-  },
-  "author": "",
-  "license": "ISC"
+    "pre-build": "npm i && npm install",
+    "pretest": "node node_modules/.bin/webdriver-manager update --versions.chrome=83.0.4103.116",
+    "start": "node node_modules/webdriver-manager/bin/webdriver-manager start",
+    "test":  "node node_modules/.bin/protractor conf/conf.js",
+    "start": "npm run update &&npm run startp &&npm run test"
+  }
 }
