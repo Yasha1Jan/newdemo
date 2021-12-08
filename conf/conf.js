@@ -5,7 +5,7 @@ exports.config = {
       seleniumAddress: 'http://localhost:4444/wd/hub',
    
    capabilities: {
-    browserName: '',
+    browserName: 'chrome',
     maxInstances: 1
    },
   
