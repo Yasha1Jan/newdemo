@@ -13,8 +13,6 @@ pipeline {
               stage('Test') {
                  steps {
                      sh 'npm install'    
-                     sh 'npm install -g protractor' 
-                     sh 'npm config set user 0'
                      sh 'node node_modules/protractor/bin/webdriver-manager update'
                      sh 'npm test' 
                   
