@@ -13,7 +13,8 @@ pipeline {
               stage('Test') {
                  steps {
                      sh 'npm install'    
-                     sh 'node node_modules/protractor/bin/webdriver-manager update'
+                     sh 'npm update'
+                     sh 'npm start' 
                      sh 'npm test' 
                   
           }
