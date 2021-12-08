@@ -10,6 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node_modules/.bin/protractor conf/conf.js"
+    "test": "./node_modules/.bin/protractor conf/conf.js",
+    "update": "./node_modules/.bin/webdriver-manager update",
+    "start": "./node_modules/.bin/webdriver-manager start"
 
 }
