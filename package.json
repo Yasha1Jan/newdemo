@@ -9,8 +9,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "./node_modules/.bin/protractor conf/conf.js",
     "update": "./node_modules/.bin/webdriver-manager update",
     "startp": "./node_modules/.bin/webdriver-manager start"
+    "test": "./node_modules/.bin/protractor conf/conf.js",
+    "start": "npm run update &&npm run startp &&npm run test"
   }
 }
