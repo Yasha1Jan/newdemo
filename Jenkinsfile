@@ -14,7 +14,7 @@ pipeline {
                  steps {
                      sh 'npm run pre-build'    
                    
-                     
+                      sh 'npm run pretest'    
                   
           }
              }
