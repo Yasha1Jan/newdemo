@@ -12,7 +12,7 @@ pipeline {
        }
               stage('Test') {
                  steps {
-                     sh 'npm pre-build'    
+                     sh 'npm run pre-build'    
                    
                      
                   
