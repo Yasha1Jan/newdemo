@@ -14,4 +14,3 @@
     "start": "node node_modules/webdriver-manager/bin/webdriver-manager start",
     "test": "node node_modules/.bin/protractor conf/conf.js",
   }
-}
