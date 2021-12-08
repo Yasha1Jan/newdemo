@@ -10,7 +10,9 @@ const Homepage = (function () {
 
         getURL: function () {
             browser.sleep(10000);
-            browser.get('http://juliemr.github.io/protractor-demo/', '200000');
+          //  browser.get('http://juliemr.github.io/protractor-demo/');
+            browser.get('https://www.google.com/');
+            browser.sleep(10000);
         },
 
         goButton: async function () {
